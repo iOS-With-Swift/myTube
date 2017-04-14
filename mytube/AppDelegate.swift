@@ -20,7 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: HomeController(collectionViewLayout: layout))
         
+        UINavigationBar.appearance().barTintColor  = UIColor.makeRBG(red: 230, green: 32, blue: 31)
         
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        application.statusBarStyle = .lightContent
+        
+        let statusbarBackgroundView = UIView()
+        statusbarBackgroundView.backgroundColor = UIColor.makeRBG(red: 194, green: 32, blue: 31)
+        window?.addSubview(statusbarBackgroundView)
+        window?.addConstrainsWithFormat(format: "V:|[v0(20)]", views: statusbarBackgroundView)
+        window?.addConstrainsWithFormat(format: "H:|[v0]|", views: statusbarBackgroundView)
         return true
     }
 

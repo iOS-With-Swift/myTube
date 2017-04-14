@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2612A5F31E97B2C700173152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A5F21E97B2C700173152 /* AppDelegate.swift */; };
-		2612A5F51E97B2C700173152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A5F41E97B2C700173152 /* ViewController.swift */; };
+		2612A5F51E97B2C700173152 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A5F41E97B2C700173152 /* HomeController.swift */; };
 		2612A5F81E97B2C700173152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2612A5F61E97B2C700173152 /* Main.storyboard */; };
 		2612A5FA1E97B2C700173152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2612A5F91E97B2C700173152 /* Assets.xcassets */; };
 		2612A5FD1E97B2C700173152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2612A5FB1E97B2C700173152 /* LaunchScreen.storyboard */; };
 		2612A6081E97B2C700173152 /* mytubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A6071E97B2C700173152 /* mytubeTests.swift */; };
 		2612A6131E97B2C700173152 /* mytubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A6121E97B2C700173152 /* mytubeUITests.swift */; };
+		2612A6221E9801A700173152 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A6211E9801A700173152 /* extensions.swift */; };
+		2612A6261E98794100173152 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2612A6251E98794100173152 /* VideoCell.swift */; };
+		26EB729F1E9CA1CE00930D29 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EB729E1E9CA1CE00930D29 /* MenuBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2612A5EF1E97B2C700173152 /* mytube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mytube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2612A5F21E97B2C700173152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2612A5F41E97B2C700173152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2612A5F41E97B2C700173152 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeController.swift; path = mytube/HomeController.swift; sourceTree = "<group>"; };
 		2612A5F71E97B2C700173152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2612A5F91E97B2C700173152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2612A5FC1E97B2C700173152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		2612A60E1E97B2C700173152 /* mytubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mytubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2612A6121E97B2C700173152 /* mytubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mytubeUITests.swift; sourceTree = "<group>"; };
 		2612A6141E97B2C700173152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2612A6211E9801A700173152 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		2612A6251E98794100173152 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		26EB729E1E9CA1CE00930D29 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		2612A5E61E97B2C700173152 = {
 			isa = PBXGroup;
 			children = (
+				2612A6271E98797A00173152 /* Controller */,
+				2612A6231E98022500173152 /* View */,
+				2612A6201E98019100173152 /* Helpers */,
 				2612A5F11E97B2C700173152 /* mytube */,
 				2612A6061E97B2C700173152 /* mytubeTests */,
 				2612A6111E97B2C700173152 /* mytubeUITests */,
@@ -98,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				2612A5F21E97B2C700173152 /* AppDelegate.swift */,
-				2612A5F41E97B2C700173152 /* ViewController.swift */,
 				2612A5F61E97B2C700173152 /* Main.storyboard */,
 				2612A5F91E97B2C700173152 /* Assets.xcassets */,
 				2612A5FB1E97B2C700173152 /* LaunchScreen.storyboard */,
@@ -123,6 +131,31 @@
 				2612A6141E97B2C700173152 /* Info.plist */,
 			);
 			path = mytubeUITests;
+			sourceTree = "<group>";
+		};
+		2612A6201E98019100173152 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2612A6211E9801A700173152 /* extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		2612A6231E98022500173152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2612A6251E98794100173152 /* VideoCell.swift */,
+				26EB729E1E9CA1CE00930D29 /* MenuBar.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2612A6271E98797A00173152 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2612A5F41E97B2C700173152 /* HomeController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +295,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2612A5F51E97B2C700173152 /* ViewController.swift in Sources */,
+				2612A6221E9801A700173152 /* extensions.swift in Sources */,
+				2612A6261E98794100173152 /* VideoCell.swift in Sources */,
+				2612A5F51E97B2C700173152 /* HomeController.swift in Sources */,
 				2612A5F31E97B2C700173152 /* AppDelegate.swift in Sources */,
+				26EB729F1E9CA1CE00930D29 /* MenuBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +552,7 @@
 				2612A6191E97B2C700173152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2612A61A1E97B2C700173152 /* Build configuration list for PBXNativeTarget "mytubeTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +561,7 @@
 				2612A61C1E97B2C700173152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2612A61D1E97B2C700173152 /* Build configuration list for PBXNativeTarget "mytubeUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +570,7 @@
 				2612A61F1E97B2C700173152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
